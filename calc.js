@@ -12,6 +12,7 @@ function solve()
     document.getElementById("result").value = y 
 } 
 
+
 //function that clear the display 
 function clr() 
 { 
