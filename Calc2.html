@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <script src="calc.js">
+    </script>
+  <div class="wrapper">
+    <div class="display"  >
+            <input type="text" id="result" />
+    </div>
+    <button class="clear double" onclick="clr()">Clear</button>
+    <button class="blank">Blnk</button>
+    <button class="op" onclick="dis('*')">*</button>
+    <button onclick="dis('7')">7</button>
+    <button onclick="dis('8')">8</button>
+    <button onclick="dis('9')">9</button>
+    <button class="op" onclick="dis('+')">+</button>
+    <button onclick="dis('4')">4</button>
+    <button onclick="dis('5')">5</button>
+    <button onclick="dis('6')">6</button>
+    <button class="op" onclick="dis('-')">-</button>
+    <button onclick="dis('1')">1</button>
+    <button onclick="dis('2')">2</button>
+    <button onclick="dis('3')">3</button>
+    <button class="op" onclick="dis('/')">/</button>
+    <button class="double" onclick="dis('0')">0</button>
+    <button onclick="dis('.')">.</button>
+    <button class="op" onclick="solve()">=</button>
+  </div>
+</body>
+</html>

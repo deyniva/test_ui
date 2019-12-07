@@ -1,0 +1,64 @@
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica;
+    }
+    body {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom right, rgb(191, 12, 38), rgb(117, 12, 38));
+      background-repeat: no-repeat;
+    }
+    .wrapper {
+      display: grid;
+      --columns: 4;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      grid-template-rows: 8rem auto;
+      grid-gap: 2rem;
+      width: 22rem;
+    }
+    .display {
+      grid-column: span 4;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem;
+      color: white;
+      font-size: 2rem;
+      background: linear-gradient(to bottom right, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.1));
+    }
+    .double {
+      grid-column: span 2;
+    }
+    button {
+      background: rgba(255, 255, 255, 0.3);
+      border: 0;
+      border-radius: 1rem;
+      display: block;
+      height: 4rem;
+      font-size: 2rem;
+      color: white;
+      text-transform: uppercase;
+      font-family: monospace;
+    }
+    button.op {
+      background: white;
+      color: rgb(191, 12, 38);
+    }
+
+    input {
+        background: transparent;
+        color:white;
+        border: none;
+        height: 100%;
+        width: 100%;
+        font-size: 2rem;
+        text-align: right;
+      }
+  
